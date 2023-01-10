@@ -1,0 +1,41 @@
+.cabezera {
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
+.contenedor__principal {
+  max-width: 1040px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-auto-rows: 1fr;
+}
+
+.seccion__tarjetas {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-rows: 1fr;
+  grid-auto-rows: 1fr;
+}
+
+.contenedor__coleccion {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-rows: 1fr;
+  grid-auto-rows: 1fr;
+}
+
+.tarjeta {
+  width: 250px;
+}
+
+.cuerpo__tarjeta {
+  padding: 20px;
+}
+
+@media (min-width: 768px) {
+  .contenedor__principal {
+    grid-template-columns: 2fr 1fr;
+  }
+}
